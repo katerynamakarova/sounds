@@ -1,0 +1,27 @@
+<!DOCTYPE html><!--тег <!DOCTYPE> призначений для вказівки типу документа.
+Це необхідно, щоб браузер розумів, як слід інтерпретувати поточну веб-сторінку-->
+<html><!--тег <html> є контейнером, який містить у собі весь вміст веб-сторінки, включаючи теги <head> та <body>-->
+<head><!--тег <head> використовується для внесення даних, які не будуть відображатися
+на сайті, але несуть певне значення для нього-->
+	<meta charset ="UTF-8"><!--це мета-тег, який є просто кодуванням-->
+	<title>Sounds</title><!--тег <title> надає назву моєму сайту-->
+<link rel="stylesheet" href="style.css"><!--підключаю файл зі стилями-->
+</head>
+<body><!--в цьому елементі записується контент-->
+  <div id="title">
+    <div>Sounds &#129345;</div><!--заголовок сторінки-->
+  </div>
+	<center><!--для вирівнювання елементу по центру сторінки-->
+<div id="main"><!--загальний ідентифікатор для всіх зображень-->
+	<div onclick="play(a)" id="a" class="sound"><img  src="1.jpg">A</div>
+  <div onclick="play(b)" id="b" class="sound"><img  src="2.jpg">B</div>
+  <div onclick="play(c)" id="c" class="sound"><img  src="3.jpg">C</div>
+  <div onclick="play(d)" id="d" class="sound"><img  src="4.jpg">D</div>
+  <div onclick="play(e)" id="e" class="sound"><img  src="5.jpg">E</div>
+  <div onclick="play(f)" id="f" class="sound"><img  src="6.jpg">F</div>
+</div>
+</center>
+<audio id="player"></audio><!--підключаю аудіо-файли-->
+<script src="script.js"> </script><!--підключаю файл із логікою-->
+</body>
+</html>
